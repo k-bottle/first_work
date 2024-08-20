@@ -106,7 +106,7 @@ with open('coordinates.csv', 'w', newline='') as csvfile:
 
     for i in range(num_images):
         # 左相机
-        opt.source = left_images[i]
+        opt.source =    left_images[i]
         circleL = detect(opt)
         ball_L = circleL[0]  # 球中心点坐标
         print(ball_L)
